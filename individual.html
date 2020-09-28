@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Рассчет ставок</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: rgb(206, 233, 236);">
+            <a class="navbar-brand" href="index.html"><h2>Рассчет ставок</h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Тотал</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="individual.html">Индивидуальный тотал </span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Лайв ставки</a>
+                  </li>
+               
+              </ul>
+            </div>
+          </nav>
+    </div>
+    <div class="text">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                  <h2>Индивидуальный тотал</h2>
+                  <p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Правила
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                     Для того чтобы найти статистику скачиваем приложение <a href="https://play.google.com/store/apps/details?id=eu.livesport.MyScore_ru&hl=ru">MY SCORE</a> . Далее ищем в букмекерской конторе матчи где кэф. на тотал составляет от 1.2 до 1.65 (тоталы вибыраем целые т.е 1, 2 и т.д чтобы можно было если что получить возврат) и вносим их в графу кэф БК. Далее заходим в приложение My score, находим этот матч и смотрим статистику (H2H). Считаем сколько раз эта ставка зашла в 20 матчах и вносим количество в таблицу ниже(по такому же принципу вносим данные в графы очные встречи и игры дома- в гостях). После этого нажимаем кнопку рассчитать. 
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row general_meetings justify-content-center">
+                <div class="col-md-5">
+                    <div class="total_win">
+                        <input class="total_win_input" type="text" placeholder="Кол-во общих проходов (20 матчей)">
+                    </div>
+                    <div class="totalWin1_home">
+                        <input class="totalWin_home_input" type="text" placeholder="Проходы (Дома-в гостях 5 матчей)">
+                    </div>
+                    <div class="total_matches_faceToFace">
+                        <input class="total_matches_faceToFace_input" type="text" placeholder="Кол-во очных матчей">
+                    </div>
+                    <div class="total_win_faceToFace">
+                        <input class="total_win_faceToFace_input" type="text" placeholder="Кол-во проходов в очных матчах">
+                    </div>
+                    <div class="factor-bk">
+                        <input type="text" class="factor_bk_input" placeholder="Введите коэффицент в бк">
+                    </div>
+                </div>
+            </div>
+           
+            
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary btn_club" data-toggle="modal" data-target="#exampleModal">
+                        Рассчет прохода
+                       </button>
+                       
+                       <!-- Modal -->
+                       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                         <div class="modal-dialog">
+                           <div class="modal-content">
+                             <div class="modal-header">
+                               <h5 class="modal-title" id="exampleModalLabel">Проходимость ставки</h5>
+                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                               </button>
+                             </div>
+                             <div class="modal-body">
+                                 <div class="f"><p class="finish"></p></div>
+            
+                                 <div class="f"><p class="finish_BK"></p></div>
+              
+                                 <div class="f"><p class="bet_value"> </p></div>
+                             </div>
+                             <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<script src="js/individual.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>

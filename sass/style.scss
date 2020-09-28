@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+body {
+    background-image: url('https://i.pinimg.com/originals/2d/0f/79/2d0f796f4655baeca812ed1b7af9abf7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input {
+    width: 90%;
+    margin: 5%;
+    border-radius: 10px;
+    box-shadow: rgb(23, 236, 208) 0 0 30px;
+   
+}
+.header {
+background-color: rgb(206, 233, 236);
+padding: 20px;
+}
+::-webkit-input-placeholder { 
+    color:    rgb(13, 82, 128);
+    font-size: 13px;
+}
+.btn_club {
+    color: rgb(58, 54, 48);
+    background-color: rgb(201, 224, 199);
+    border-radius: 50px;
+    margin-top: 10%;
+    height: 40%;
+    width: 80%;
+}
+h2 {
+    color: rgb(75, 74, 74);
+} 
+p {
+    font-size: 16px;
+    color: rgb(65, 65, 65);
+    font-family: 'Ranchers', cursive;
+    border: cadetblue 5px ; 
+    border-radius: 3px;
+}
+ .f {
+     border: rgb(56, 70, 136) 1px solid;
+     margin-top: 5px;
+     border-radius: 10px;
+ }

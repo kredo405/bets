@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
+body {
+  background-image: url("https://i.pinimg.com/originals/2d/0f/79/2d0f796f4655baeca812ed1b7af9abf7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+input {
+  width: 90%;
+  margin: 5%;
+  border-radius: 10px;
+  box-shadow: #17ecd0 0 0 30px; }
+
+.header {
+  background-color: #cee9ec;
+  padding: 20px; }
+
+::-webkit-input-placeholder {
+  color: #0d5280;
+  font-size: 13px; }
+
+.btn_club {
+  color: #3a3630;
+  background-color: #c9e0c7;
+  border-radius: 50px;
+  margin-top: 10%;
+  height: 40%;
+  width: 80%; }
+
+h2 {
+  color: #4b4a4a; }
+
+p {
+  font-size: 16px;
+  color: #414141;
+  font-family: 'Ranchers', cursive;
+  border: cadetblue 5px;
+  border-radius: 3px; }
+
+.f {
+  border: #384688 1px solid;
+  margin-top: 5px;
+  border-radius: 10px; }
